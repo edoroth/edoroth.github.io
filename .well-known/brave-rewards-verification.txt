@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: edoroth.github.io
+Token: 6d3405770c59ccb346dc973563fa471e4808a870d757ea8483772acd9b809f6a
