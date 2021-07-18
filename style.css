@@ -56,6 +56,7 @@ section.highlight p:last-child {
 
 img {
     float: right;
+    border-radius: 50%;
 }
 
 h1, h2, h3 {
