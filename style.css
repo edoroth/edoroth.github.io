@@ -54,8 +54,14 @@ section.highlight p:last-child {
     margin-bottom: 0px;
 }
 
+.image-wrapper {
+    float: right;
+    border-radius: 50%;
+}
+
 img {
     float: right;
+    border-radius: 50%;
 }
 
 h1, h2, h3 {
