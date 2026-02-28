@@ -17,8 +17,10 @@
         <header>
             <div class="header-content">
                 <div class="header-text">
-                    <h1>Edo Roth</h1>
-                    <p class="email"><a title="academic" href="mailto:edoroth@duck.com">edoroth@duck.com</a></p>
+                    <div class="name-line">
+                        <h1>Edo Roth</h1>
+                        <a class="email" title="academic" href="mailto:edoroth@duck.com">edoroth@duck.com</a>
+                    </div>
                 </div>
                 <div class="image-wrapper"><img src="prof_square.jpg" alt="My face" height="192" width="192"></div>
             </div>
@@ -30,8 +32,11 @@
             <p>I received my PhD from the <a href="https://cis.upenn.edu/index.php" title="CIS at Penn">Department of Computer and Information Science</a> at the University of Pennsylvania in 2022, where I was fortunate to be advised by <a href="http://www.cis.upenn.edu/~ahae/" title="Andreas Haeberlen">Andreas Haeberlen</a>.</p>
         </section>
 
-        <section>
-            <h2 id="publications">Research</h2>
+        <details class="academic">
+            <summary>Academic experience</summary>
+
+        <details class="academic-section">
+            <summary><h2 id="publications">Research</h2></summary>
 
             <span class="year first">2025</span>
 
@@ -137,26 +142,28 @@
                 <span class="location">ICFP 2019, Berlin, Germany.</span><br />
                 <a class="action" href="https://arxiv.org/pdf/1905.12594.pdf">[PDF]</a>
             </p>
-        </section>
+        </details>
 
-        <section>
-            <h2 id="teaching">Teaching (as TA)</h2>
+        <details class="academic-section">
+            <summary><h2 id="teaching">Teaching (as TA)</h2></summary>
 
             <h3>NETS 212: Scalable and Cloud Computing</h3>
             <p>Fall 2018, University of Pennsylvania, <a class="action" href="https://nets2120.seas.upenn.edu/">[Website]</a></p>
 
             <h3>CIS 511: Theory of Computation</h3>
             <p>Spring 2019, University of Pennsylvania</p>
-        </section>
+        </details>
 
-        <section>
-            <h2 id="service">Service</h2>
+        <details class="academic-section">
+            <summary><h2 id="service">Service</h2></summary>
             <p>Reviewer at <a href="https://tpdp.journalprivacyconfidentiality.org/">TPDP 2026</a></p>
             <p>Reviewer at <a href="https://ppai-workshop.github.io/">AAAI Workshop on Privacy-Preserving Artificial Intelligence 2025</a></p>
             <p>External Reviewer at <a href="https://petsymposium.org/cfp22.php">PETS 2022</a>, <a href="https://petsymposium.org/cfp23.php">2023</a></p>
             <p>AEC Reviewer at <a href="https://sysartifacts.github.io/eurosys2021/">EuroSys 2021</a></p>
             <p>AEC Reviewer at <a href="https://sysartifacts.github.io/osdi2020/">OSDI 2020</a></p>
-        </section>
+        </details>
+
+        </details>
 
         <footer id="tennis">
             <a href="#tennis">🎾</a>

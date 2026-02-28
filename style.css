@@ -68,10 +68,16 @@ section.highlight p:last-child {
     flex: 1;
 }
 
-p.email {
+.name-line {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 0 12px;
+}
+
+a.email {
     font-size: 14px;
-    margin-top: 4px;
-    margin-bottom: 0;
+    color: #001f54;
 }
 
 .image-wrapper {
@@ -185,6 +191,78 @@ a.action{
     .year.first {
         top: 26px;
     }
+}
+
+/* Dropdowns */
+details.academic {
+    margin-top: 24px;
+}
+
+details.academic > summary {
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #667898;
+    padding: 6px 0;
+    user-select: none;
+}
+
+details.academic > summary::-webkit-details-marker { display: none; }
+details.academic > summary::marker { display: none; }
+
+details.academic > summary::before {
+    content: '▶';
+    font-size: 9px;
+    transition: transform 0.15s;
+}
+
+details.academic[open] > summary::before {
+    transform: rotate(90deg);
+}
+
+details.academic-section {
+    margin-top: 4px;
+}
+
+details.academic-section > summary {
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    user-select: none;
+}
+
+details.academic-section > summary::-webkit-details-marker { display: none; }
+details.academic-section > summary::marker { display: none; }
+
+details.academic-section > summary::before {
+    content: '▶';
+    font-size: 9px;
+    color: #667898;
+    flex-shrink: 0;
+    margin-top: 2px;
+    transition: transform 0.15s;
+}
+
+details.academic-section[open] > summary::before {
+    transform: rotate(90deg);
+}
+
+details.academic-section > summary h2 {
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #667898;
+    margin: 0;
+    line-height: normal;
 }
 
 .credits{
